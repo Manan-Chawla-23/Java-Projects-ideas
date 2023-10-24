@@ -1,0 +1,31 @@
+#types of tree:
+A. Binary tree:--
+   In this type of tree we have root node can have atmost two children node which refer
+   to right and left side of the root node.
+B. Binary search tree:--
+   In this type of tree the value of all left node is less then the all right node , and 
+   in these tree there will be no repetataion of value or node.
+c. AVL tree:--
+   It is a self balancing tree in which height of left/subtree is differ by atmost one node.
+   it can be occur at left or right side.
+D. Red black tree:--
+   A RBT is self balancing tree with extra bit of infromation per node which also helful in 
+   presenting or denoting color of node.
+E. B-tree:--
+   It is also a self balancing tree that maintain sorted data and allow efficient operation.
+
+#Traversal method of tree:--
+A.Preorder-->
+  In this root node is visited first followed by left subtree and then rifht subtree.It is often
+  used to create copy of a tree.
+B.Inorder-->
+  In this left subtree is visited first followed by root node and then right subtree.
+  In this node are visiting in asecnding order when tree represent BST.
+C.Postorder-->
+  In this left subtree is visited first followed by right sbutree and then root node.It often used 
+  to delete tree.
+
+#Concept of Traversal:--
+ INORDER   --  ROOT   LEFT   RIGHT 
+ PREORDER  --  LEFT   ROOT   RIGHT 
+ POSTORDER --  LEFT   RIGHT  ROOT 

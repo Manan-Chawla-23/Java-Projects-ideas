@@ -1,0 +1,186 @@
+# introduction to Java 
+Java is one of the most popular programming language it is designed to be platfrom independent 
+meaning it can be run on various operating system.
+It is widely used for creating games,desktop applicaton , GUI based application etc.
+OOPs is the core of java programming , OOP is so integral to java that it is best to understand
+it's basic principle before you begin writing a simple program.
+.java is the extension of saving a java file.
+Java is also utilized in scientific calculation.
+---------------------------------------------------------------------------------------------------
+# use of Java
+1. Creating GUI based application
+2. Creating games 
+3. For creating large scale enterprise application
+4. It provide various tools and framework for creating better application
+5. easy to use
+6. It have rich amount of classes and interface which make it more used language then any other
+   programming language
+-------------------------------------------------------------------------------------------------
+# advantage of Java
+1.run on any os 
+2.based on OOPs
+3.provide various class and interface
+4.it has automatic memory management which reduce risk of memory leaks
+5. also provide various features like exception handling 
+------------------------------------------------------------------------------------------------
+#disadvantage of Java
+1.it tends to be more verbose than any other programming language
+2.it has steeper learning curve for beginners
+3.it may be still slower than some language that compile directly to machine code
+4.it have higher performance overhead
+5.it have low level access to system resources 
+--------------------------------------------------------------------------------------------------
+# properties of java
+1.Object oriented
+2.supports multi-threading
+3.platfrom independent
+4.automatic memory management
+5.exception handling
+---------------------------------------------------------------------------------------------------
+#Data type
+Java define four integer type - byte,short,int and long ; all these are signed positive and negative
+long- width:64
+int- width:32
+short- width:16
+byte- width:8 
+
+floating point are also known as real number , used to express fractional precision.
+float- width:32
+double- width:64
+
+char is a data type which is used to store character value but we have to remind that char of c/cpp
+not same as java's char.
+Java use unicode to represent character.
+char requires 16 byte to store its value and its range varies from 0-65 and there are no negative
+chars.
+
+java has primitive data type called as boolean for logical value it can only have one of the possible 
+value true or false.
+'bool' keyword is used to represnt it.
+----------------------------------------------------------------------------------------------------
+# variables
+ in java variable is a named storage location that holds value of particular type,allow you to
+ store and manipulate data within a program.
+ syntax: data_type_name variable_name=value;
+ there are three types of variable:-
+ A.local scope :
+   those which are declare inside a scope / method are called as local variable.
+  ex:
+   public static void main()
+   {
+      int x=10;
+      System.out.println(x);
+   }
+
+B.Instance scope :
+ these are declared within a class but outside of any method , constructor or block.
+ they are associated with instance of class and have instance scope.
+ ex:
+    public static void main()
+    {
+      int x=10;
+      public void met()
+      {
+         system.out.println(x);
+      }
+    }
+
+C.Class scope :
+ these are called as static variable and declared within using 'static' keyword.
+ ex:
+   public class one()
+   {
+      static int x=10;
+      public static void main()
+      {
+         system.out.println(x);
+      }
+   }
+----------------------------------------------------------------------------------------------------
+#JDk
+also refer as Java Development kit , internally it contains the JVM and JRE.
+It provides tools to work with java language.
+
+#JRE
+also refer as the Java Runtime Enviorment , it internally contains the JVM .
+It provide Enviorment to work with java program.
+
+#JVM
+also refer as the Java Virtual Machine , it is the software in form of interpreter in 'c' language
+through which we can execute the Java program.
+
+JDK-------> JRE -------> JVM 
+
+----------------------------------------------------------------------------------------------------
+#ARRAY_LIST
+It is more like dynamic array that is the part of java collection framework.It provides a way to 
+store and manage the element in flexible and convenient manner.
+It works similar like the vectors we use in the c++.
+
+syntax:
+     ARRAY_LIST<data_type_name> ARRAY_LIST_NAME = new ARRAY_LIST<data_type_name>();
+     there are some of it operation 
+     a. ARRAY_LIST_NAME.add();
+     b. ARRAY_LIST_NAME.size();
+     c. ARRAY_LIST_NAME.replace(index,data);
+     d. ARRAY_LIST_NAME.remove();
+----------------------------------------------------------------------------------------------------
+#STACKS
+It the part of java.util package and provides the implementation of stack data structure.
+It extends 'vector' adn follow LIFO principle.
+ITs operation are as follows->
+peek()- it helps to return the top element without removing it
+push()- it helps to enter the data in the stack 
+pop()- it helps to return and remove the top element from the stack 
+isEmpty()- for checking whether the stack is empty or not
+isFUll()- to check whether its full or not.
+-----------------------------------------------------------------------------------------------------
+#QUEUE
+In java it is a data structure that follows 'FIFO' principle.
+we can create queue using the 'queue' interface and common implementation using include
+'linked list' and 'arraydequeue'.
+For adding element we use enqueue() or offer() method
+for removing element we use dequeue() or poll() method
+for getting element we use element() or peek() method
+for checking whether the queue is empty or not we use isEmpty() method 
+for getting the size of queue we use size() method 
+Queue is able to maintain the order in which element are added , this helps in processing thing in 
+an predictable sequenence like handling task in order they arrived.
+-----------------------------------------------------------------------------------------------------
+#NETWORKING IN Java
+for performing any networking related work in java we use java.net package , which is genrally
+used to write program that execute across multiple devices.
+there are two major protocol in .net package
+a. TCP---> Transmission control protocol 
+b. UDP---> User datagram protocol 
+Term network programming refer to writing program that execute across multiple devices.
+TCP is more reliable than UDP as UDP's connection is slow or less .
+
+At the core of java networking supports concept of Sockets. 
+A sockect identifiers is an endpoint in network. socket are the foundation of modern networking 
+because socket allow a single computer to serve many clients at once as well to server many 
+different type of resources.
+
+A server process is said to 'listen' to a port until a client connects to it. Server can allow 
+multiple clients to connect at a same time.
+
+Internet protocol(IP) is low level routing protocol that breaks data into small packets and send 
+them to a address across network.
+
+Transmission control protocol(TCP) is high level protocol that manage roubstly string together 
+these packact sorting is done.
+
+**Inet Address--->
+It is a class used to encaplsulate both numerical IP address and domain name for that address.
+The inet address class hides the number and can handle both IPv4 and IPv6 address.
+IPv4 addresses are 32 bits in length, IPv6 addresses are 128 bits in length.
+IPv4: Security features in IPv4, such as IPsec, are optional and 
+      often implemented separately.
+IPv6: IPv6 includes built-in support for IPsec, enhancing security capabilities 
+      at the network layer.
+IPv6 offers a much larger address space, improved security features, and a more efficient header 
+structure. While IPv4 is still in use, IPv6 adoption is increasing to support the growing number 
+of connected devices and the future expansion of the internet.
+(e.g., 192.168.1.1)--->IPv4
+(e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334)--->IPv6
+--------------------------------------------------------------------------------------------
